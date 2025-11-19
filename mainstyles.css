@@ -15,6 +15,7 @@ html {
     background-position: top center, center;
     background-repeat: no-repeat, repeat-y;
     background-size: contain;
+    background-color: #ae8e5d;
 
 }
 
@@ -29,6 +30,13 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0em auto;
-    border-bottom: 2px solid black;
-    
+    border-bottom: 2px solid var(--base-colour);
+}
+
+h3,img {
+    text-align: center;
+}
+
+footer {
+    border-top: 2px solid var(--base-colour);
 }
