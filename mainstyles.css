@@ -1,24 +1,34 @@
-:root {
-    font-size: 16px;
-}
-
-html {
-    --base-colour: #ffecd6;
-    background-image: url(mobile_map.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 @font-face {
     font-family:Metamorphous;
     src: url(Metamorphous-Regular.ttf)
 }
 
-body {
-    font-family: Metamorphous, serif;
+
+:root {
+    font-size: 16px;
+    height: 100%;
 }
 
-img {
-    height: 5%;
-    width: 5%;
+html {
+    --base-colour: #311a0a;
+    background-image: url('images/mobile_map.jpg'), url('images/tile.jpg');
+    background-position: top center, center;
+    background-repeat: no-repeat, repeat-y;
+    background-size: contain;
+
+}
+
+body, a {
+    font-family: Metamorphous, serif;
+    color: var(--base-colour);
+    text-decoration: none;
+
+}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0em auto;
+    border-bottom: 2px solid black;
+    
 }
