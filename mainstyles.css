@@ -31,72 +31,9 @@ header {
     margin: 0em auto;
     border-bottom: 2px solid var(--base-colour);
 }
-
-nav {
-    display: block;
-    text-align: center;
-}
-
-footer {
-    border-top: 2px solid var(--base-colour);
-}
-
-@media screen and (min-width: 800px){
-    html{
-        background-image: url('images/tile_widescreen.jpg');
-        background-repeat: repeat;
-    }
-
-    header > h2 {
-        margin-left: auto;
-        margin-right: 0%;
-        font-size: 1.25rem;
-        align-self: center;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    nav>:first-child  {
-        width:100%;
-    }
-
-}
-
-@media screen and (min-width: 1140px) {
-
-    nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr, 1fr, 1fr;
-        grid-template-areas: 
-        "top-left top-centre top-right"
-        "centre-left centre centre-right"
-        "bottom-left bottom-centre bottom-right";
-    }
-
-    a {
-        grid-area: centre;
-        align-self: center;
-    }
-    a+a {
-        grid-area:top-centre;
-    }
-
-    a+a+a {
-        grid-area: centre-right;
-    }
-
-    a+a+a+a {
-        grid-area: centre-left;
-    }
-
-    a+a+a+a+a {
-        grid-area: bottom-centre;
-    }
-
+header > h2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0%;
+    font-size: 1.25rem;
 }
