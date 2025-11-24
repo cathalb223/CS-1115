@@ -10,11 +10,12 @@
 
 html {
     --base-colour: #311a0a;
+    --bg--colour: #ae8e5d;
     background-image: url('images/mobile_map.jpg'), url('images/tile.jpg');
     background-position: top right, center;
     background-repeat: no-repeat, repeat;
     background-size: contain;
-    background-color: #ae8e5d;
+    background-color: var(--bg--colour);
 
 }
 
@@ -24,16 +25,24 @@ body, a {
     text-decoration: none;
 
 }
+
 header {
+    background-image: url('images/tile_empty.jpg');
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0em auto;
     border-bottom: 2px solid var(--base-colour);
 }
+
 header > h2 {
     width: 100%;
     margin-left: auto;
     margin-right: 0%;
     font-size: 1.25rem;
+    align-self: center;
+}
+
+footer {
+    background-image: url('images/tile_empty.jpg');
 }
