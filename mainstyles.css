@@ -26,6 +26,10 @@ body, a {
 
 }
 
+a:hover {
+    opacity: 50%;
+}
+
 header {
     background-image: url('images/tile_empty.jpg');
     display: flex;
