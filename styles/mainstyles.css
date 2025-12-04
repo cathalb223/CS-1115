@@ -11,7 +11,7 @@
 html {
     --base-colour: #311a0a;
     --bg--colour: #ae8e5d;
-    background-image: url('images/mobile_map.jpg'), url('images/tile.jpg');
+    background-image: url('../images/mobile_map.jpg'), url('../images/tile.jpg');
     background-position: top right, center;
     background-repeat: no-repeat, repeat;
     background-size: contain;
@@ -31,7 +31,7 @@ a:hover {
 }
 
 header {
-    background-image: url('images/tile_empty.jpg');
+    background-image: url('../images/tile_empty.jpg');
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -48,5 +48,28 @@ header > h2 {
 }
 
 footer {
-    background-image: url('images/tile_empty.jpg');
+    background-image: url('../images/tile_empty.jpg');
+}
+
+header > nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0%;
+    font-size: 1.25rem;
+}
+
+header a > img {
+    height: 2em;
+    width: 2.5em;
+    align-self: center;
+}
+
+header nav > a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer {
+    border-top: 2px solid var(--base-colour);
 }
