@@ -25,7 +25,7 @@ section {
     background-image: url('../images/tile_empty.jpg');
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 620px){
     header {
         display: flex;
         flex-direction: row;
@@ -33,10 +33,29 @@ section {
         justify-content: space-between;
     }
 
+    header > h1 {
+        width: fit-content;
+    }
+
     header > nav, nav > a {
-        width: 50%;
+        width: fit-content;
         margin-left: auto;
-        margin-right: 0%;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section + section {
+        border-radius: 0;
+        width: 45%;
+    }
+
+    section + section + section + section {
+        width: 95%;
     }
 
 }
