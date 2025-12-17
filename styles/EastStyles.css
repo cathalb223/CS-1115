@@ -1,0 +1,47 @@
+section {
+    border: 0.2em dotted var(--base-colour);
+    border-radius: 5%;
+    padding: 0.2em;
+    margin: 1em 0.2em;
+    background-color: var(--bg--colour);
+}
+
+img {
+    width: 100%;
+    opacity: 75%;
+    border-radius: 10%;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header > h1 {
+        width: fit-content;
+    }
+
+    header > nav, nav > a {
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    section {
+        width: 30%;
+        height: fit-content;
+    }
+
+    img {
+        width: 100%;
+    }
+}
