@@ -10,7 +10,7 @@
 
 html {
     --base-colour: #311a0a;
-    --bg--colour: #ae8e5d;
+    --bg--colour: #b49260ce;
     background-image: url('../images/mobile_map.jpg'), url('../images/tile.jpg');
     background-position: top right, center;
     background-repeat: no-repeat, repeat;
@@ -72,4 +72,8 @@ header nav > a {
 
 footer {
     border-top: 2px solid var(--base-colour);
+}
+
+h3 {
+    font-weight: bold;
 }

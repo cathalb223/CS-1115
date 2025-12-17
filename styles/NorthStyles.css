@@ -1,5 +1,64 @@
-main {
-    column-width: 20em;
-    column-gap: 2em;
-    column-rule: 1px solid gray;
+th, td {
+    border: 0.1em dotted var(--base-colour);
+}
+
+section + section, section section {
+    border: 0.2em dotted var(--base-colour);
+    border-radius: 5%;
+    padding: 0.2em;
+    margin-bottom: 1em;
+    background-color: var(--bg--colour);
+}
+
+caption {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    opacity: 75%;
+    border-radius: 10%;
+}
+
+@media screen and (min-width: 800px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header > h1 {
+        width: fit-content;
+    }
+
+    header > nav, nav > a {
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    section, section + section, section section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 1%;
+        border-radius: 1%;
+    }
+
+    section > h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    section > p {
+        align-self: center;
+        width: 45%;
+    }
+    section > img {
+        width: 45%;
+        margin-bottom: 1%;
+    }
 }

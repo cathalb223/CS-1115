@@ -19,11 +19,9 @@ section+section {
     border-radius: 5%;
     padding: 0.2em;
     margin-bottom: 1em;
+    background-color: var(--bg--colour);
 }
 
-section {
-    background-image: url('../images/tile_empty.jpg');
-}
 
 @media screen and (min-width: 620px){
     header {
